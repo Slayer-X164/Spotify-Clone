@@ -32,3 +32,21 @@
     padding: 10px;
     
 }
+/* dark scroll bar */
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+    background-color: rgb(33, 38, 75);/* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(55, 60, 96); /* Color of the scrollbar thumb */
+    border-radius: 6px; /* Round the corners of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(104, 111, 154); /* Color of the scrollbar thumb on hover */
+}
+
+
+/* dark scroll bar */

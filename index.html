@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TuneLabs</title>
+    <title>TuneLabs : Music For Everyone</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="util.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   </head>
   <body>
     <div class="container flex bg-color-primary">
@@ -22,13 +23,17 @@
             <li>
               <img class="invert" src="/svgs/home-sharp.svg" alt="home" />home
             </li>
+           
             <li>
               <img
                 class="invert"
                 src="/svgs/search-sharp.svg"
                 alt="search"
-              />search
+              />
+              <input type="text" class="search" placeholder="search music..">
             </li>
+         
+
           </ul>
         </div>
 
@@ -36,6 +41,110 @@
           <div class="heading">
             <img src="/svgs/library.svg" class="invert" alt="Library" />
             <h2>Your Library</h2>
+          </div>
+          <div class="menu-song">
+            <li class="songItem">
+              <span>01</span>
+              <img src="/music images/1.png" alt="" />
+              <h5>
+                shape of you <br />
+                <div class="subtitle">ed sheeran</div>
+              </h5>
+              <img
+                src="/svgs/play-stroke-rounded.svg"
+                class="playlistPlay invert"
+                id="1"
+                alt=""
+              />
+            </li>
+
+            <li class="songItem">
+              <span>02</span>
+              <img src="/music images/2.png" alt="" />
+              <h5>
+                Fifty fifty  <br />
+                <div class="subtitle">Cupid</div>
+              </h5>
+              <img
+                src="/svgs/play-stroke-rounded.svg"
+                class="playlistPlay invert"
+                id="2"
+                alt=""
+              />
+            </li>
+
+            <li class="songItem">
+              <span>03</span>
+              <img src="/music images/3.png" alt="" />
+              <h5>
+                Sorry <br />
+                <div class="subtitle">Justin beiber</div>
+              </h5>
+              <img
+                src="/svgs/play-stroke-rounded.svg"
+                class="playlistPlay invert"
+                id="3"
+                alt=""
+              />
+            </li>
+
+            <li class="songItem">
+              <span>04</span>
+              <img src="/music images/4.jpg" alt="" />
+              <h5>
+                Roar <br />
+                <div class="subtitle">Katy Perry</div>
+              </h5>
+              <img
+                src="/svgs/play-stroke-rounded.svg"
+                class="playlistPlay invert"
+                id="4"
+                alt=""
+              />
+            </li>
+            <li class="songItem">
+              <span>05</span>
+              <img src="/music images/5.png" alt="" />
+              <h5>
+                Despacito <br />
+                <div class="subtitle">Luis Fonsi</div>
+              </h5>
+              <img
+                src="/svgs/play-stroke-rounded.svg"
+                class="playlistPlay invert"
+                id="5"
+                alt=""
+              />
+            </li>
+            <li class="songItem">
+              <span>06</span>
+              <img src="/music images/6.jpg" alt="" />
+              <h5>
+                Mi Amor <br />
+                <div class="subtitle">Sharn</div>
+              </h5>
+              <img
+                src="/svgs/play-stroke-rounded.svg"
+                class="playlistPlay invert"
+                id="6"
+                alt=""
+              />
+            </li>
+            <li class="songItem">
+              <span>07</span>
+              <img src="/music images/7.jpeg" alt="" />
+              <h5>
+                Counting <br />
+                <div class="subtitle">One republic</div>
+              </h5>
+              <img
+                src="/svgs/play-stroke-rounded.svg"
+                class="playlistPlay invert"
+                id="7"
+                alt=""
+              />
+            </li>
+
           </div>
           <div class="footer">
             <div>
@@ -60,15 +169,15 @@
         </div>
       </div>
 
-      <div class="right p-1 bg-grey-secondary rounded">
+      <div class="right bg-grey-secondary rounded">
         <div class="header rounded">
           <div class="nav">
             <img src="/svgs/arrow-left-01-stroke-rounded.svg" alt="" />
             <img src="/svgs/arrow-right-01-stroke-rounded.svg" alt="" />
           </div>
           <div class="button">
-            <button>Sign Up</button>
-            <button>Login</button>
+            <button class="signupBtn">Sign up</button>
+            <button class="loginBtn">Log in</button>
           </div>
         </div>
 
@@ -77,10 +186,22 @@
           <div class="card-container">
             <div class="card">
               <div class="play">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none">
-                  <circle cx="16" cy="16" r="16" fill="#07b407"/> 
-                  <path d="M22.8906 16.846C22.5371 18.189 20.8667 19.138 17.5257 21.0361C14.296 22.8709 12.6812 23.7884 11.3798 23.4196C10.8418 23.2671 10.3516 22.9776 9.95624 22.5787C9 21.6139 9 19.7426 9 16C9 12.2574 9 10.3861 9.95624 9.42132C10.3516 9.02245 10.8418 8.73288 11.3798 8.58042C12.6812 8.21165 14.296 9.12907 17.5257 10.9639C20.8667 12.862 22.5371 13.811 22.8906 15.154C23.0365 15.7084 23.0365 16.2916 22.8906 16.846Z" fill="white" stroke="#66cc66" stroke-width="1.5" stroke-linejoin="round"/>
-              </svg>                                   
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  width="32"
+                  height="32"
+                  fill="none"
+                >
+                  <circle cx="16" cy="16" r="16" fill="#07b407" />
+                  <path
+                    d="M22.8906 16.846C22.5371 18.189 20.8667 19.138 17.5257 21.0361C14.296 22.8709 12.6812 23.7884 11.3798 23.4196C10.8418 23.2671 10.3516 22.9776 9.95624 22.5787C9 21.6139 9 19.7426 9 16C9 12.2574 9 10.3861 9.95624 9.42132C10.3516 9.02245 10.8418 8.73288 11.3798 8.58042C12.6812 8.21165 14.296 9.12907 17.5257 10.9639C20.8667 12.862 22.5371 13.811 22.8906 15.154C23.0365 15.7084 23.0365 16.2916 22.8906 16.846Z"
+                    fill="white"
+                    stroke="#66cc66"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </div>
               <img src="/music images/chill hits.jpeg" alt="happy hits" />
               <h2>Chill Hits</h2>
@@ -89,17 +210,52 @@
 
             <div class="card">
               <div class="play">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none">
-                  <circle cx="16" cy="16" r="16" fill="#07b407"/> 
-                  <path d="M22.8906 16.846C22.5371 18.189 20.8667 19.138 17.5257 21.0361C14.296 22.8709 12.6812 23.7884 11.3798 23.4196C10.8418 23.2671 10.3516 22.9776 9.95624 22.5787C9 21.6139 9 19.7426 9 16C9 12.2574 9 10.3861 9.95624 9.42132C10.3516 9.02245 10.8418 8.73288 11.3798 8.58042C12.6812 8.21165 14.296 9.12907 17.5257 10.9639C20.8667 12.862 22.5371 13.811 22.8906 15.154C23.0365 15.7084 23.0365 16.2916 22.8906 16.846Z" fill="white" stroke="#66cc66" stroke-width="1.5" stroke-linejoin="round"/>
-              </svg>                                   
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  width="32"
+                  height="32"
+                  fill="none"
+                >
+                  <circle cx="16" cy="16" r="16" fill="#07b407" />
+                  <path
+                    d="M22.8906 16.846C22.5371 18.189 20.8667 19.138 17.5257 21.0361C14.296 22.8709 12.6812 23.7884 11.3798 23.4196C10.8418 23.2671 10.3516 22.9776 9.95624 22.5787C9 21.6139 9 19.7426 9 16C9 12.2574 9 10.3861 9.95624 9.42132C10.3516 9.02245 10.8418 8.73288 11.3798 8.58042C12.6812 8.21165 14.296 9.12907 17.5257 10.9639C20.8667 12.862 22.5371 13.811 22.8906 15.154C23.0365 15.7084 23.0365 16.2916 22.8906 16.846Z"
+                    fill="white"
+                    stroke="#66cc66"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </div>
               <img src="/music images/happy hits.jpeg" alt="happy hits" />
               <h2>Happy Hits!</h2>
               <p>Hits to boost your mood and fill you with happiness!</p>
             </div>
-
           </div>
+        </div>
+        <div class="playbar">
+          <div class="songinfo">
+            <img src="/music images/shape of you.png" id="poster_master_play" alt="" />
+              <h5 id="title">
+                shape of you <br />
+                <div class="subtitle">ed sheeran</div>
+              </h5>
+              
+          </div>
+          <div class="songBtns">
+            <i class="bi bi-caret-left-fill"></i>
+            
+            <i class="bi bi-play-circle"id="masterPlay" class="invert playbtn"></i>
+            <i class="bi bi-caret-right-fill"></i>
+          </div>
+          <div id="currentTime">0:00</div>
+          <div class="bar">
+            <input type="range" id="seek" min="0" max="100">
+            <div class="bar2" id="bar2"></div>
+            <div class="dot"></div>
+          </div>
+         
+
         </div>
       </div>
     </div>
